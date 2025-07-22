@@ -55,13 +55,13 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose, position }
               transition={{ delay: 0.3, duration: 0.4 }}
             >
               <h3 className="text-2xl font-play font-bold text-white mb-4">
-                Thanks for joining!
+                Mission accepted, legend! You are very early! 🚀
               </h3>
               <p className="text-gray-300 text-lg mb-2 font-play">
-                You're <span className="text-green-400 font-bold">#{position}</span> on the waitlist.
+                You've secured spot <span className="text-green-400 font-bold">#{position}</span> in the inner circle at our Esports!
               </p>
               <p className="text-gray-400 font-play">
-                We'll notify you when we launch!
+                You'll be first to know when we drop something epic! We will e-mail you!
               </p>
             </motion.div>
             
