@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom cursor styles */
+html, body, * {
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+}
+
+/* Enhanced hover effects for all interactive elements */
+a:hover ~ .cursor,
+button:hover ~ .cursor,
+input:hover ~ .cursor,
+[role="button"]:hover ~ .cursor,
+.hover-this:hover ~ .cursor,
+.hover-target:hover .cursor {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+/* Global cursor scale effect */
+body.cursor-hover .cursor {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+/* Typography */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+  }
+  
+  body {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+  }
+  
+  .subtitle {
+    font-family: 'Play', sans-serif;
+    font-weight: 500;
+  }
+}
+
+/* Prevent horizontal scroll and ensure smooth scrolling */
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
