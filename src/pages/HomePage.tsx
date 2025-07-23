@@ -84,11 +84,11 @@ const HomePage: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-8"
+            className="mb-8 mt-20 md:mt-8"
           >
-            <div className="inline-flex items-center px-4 py-2 bg-purple-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-6">
+            <div className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 bg-purple-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-6 text-xs md:text-sm">
               <img src="/logo-built-on-monad.svg" alt="Built on Monad" className="w-4 h-4 mr-2" />
-              <span className="text-purple-200 text-sm font-play font-medium hover:drop-shadow-[0_0_6px_rgba(168,85,247,0.4)] transition-all duration-300">Built on Monad</span>
+              <span className="text-purple-200 font-play font-medium hover:drop-shadow-[0_0_6px_rgba(168,85,247,0.4)] transition-all duration-300">Built on Monad</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-play font-bold mb-6 leading-tight hover:drop-shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-500">
